@@ -33,7 +33,7 @@ for i in range(n):
 
 
 
-moving_objects = sorted(moving_objects, key=lambda x: (x.lower(), x.isupper()))
+moving_objects = sorted(moving_objects, key=lambda x: (x.isupper(),x))
 if "." in moving_objects:
     moving_objects.remove(".")
 # Открываем файл для записи
