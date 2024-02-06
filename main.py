@@ -34,10 +34,10 @@ for i in range(n):
 
 
 moving_objects = sorted(moving_objects, key=lambda x: (x.lower(), x.islower()))
-
+moving_objects.remove(".")
 # Открываем файл для записи
 with open("OUTPUT.TXT", "w") as file:
     file.write(str(len(moving_objects)) + '\n')
 
     file.write(''.join(moving_objects))
-    
+    print(moving_objects)
